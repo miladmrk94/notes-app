@@ -30,7 +30,7 @@ function App() {
     if (savedNotes) {
       setNotes(savedNotes)
     }
-  }, [])
+  }, []);
   useEffect(() => {
     localStorage.setItem('react-notes-app-data', JSON.stringify(notes))
   }, [notes])
