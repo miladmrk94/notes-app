@@ -33,16 +33,23 @@ textarea {
     resize: none;
     background-color: #67d7cc;
 }
-textarea:focus{
+textarea:focus {
     outline: none;
 }
-.save{
+.save {
     background-color: #e1e1e1;
     border: none;
     border-radius: 15px;
     padding: 5px 10px 5px 10px;
 }
-.save:hover{
+.save:hover {
     background-color: #ededed;
     cursor: pointer;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 25px;
 }
