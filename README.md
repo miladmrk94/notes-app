@@ -1,5 +1,5 @@
 # Notes App
-Notes APP - React Hooks
+Notes App - React Hooks
 <br>
 
 Project link: https://shayanafkane.ir/portfolio/notes-app/
