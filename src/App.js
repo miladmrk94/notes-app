@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { nanoid } from "nanoid";
 import NoteList from "./components/NotesList";
+import Header from "./components/Header";
 
 function App() {
 
@@ -22,6 +23,8 @@ function App() {
     }
   ]);
 
+
+  const [darkMode, setDarkMode] = useState(false);
   const addnote = (text) => {
     const date = new Date();
     const newNote = {
@@ -37,8 +40,12 @@ function App() {
     setNotes(newNotes)
   }
   return (
+    <div className={`${darkMode && 'dark-mode'}`}>
     <div className="container">
+      <Header handleToggleButton={setDarkMode} darkmodeTrue={darkMode} />
       <NoteList notes={notes} handleAddNote={addnote} handleDeleteNote={deleteNote} />
+    </div>
+
     </div>
   );
 }

@@ -3,11 +3,8 @@ import Note from "./Note";
 
 const NoteList = ({ notes, handleAddNote, handleDeleteNote }) => {
     return (
-        <>
-            <div className="header">
-                <h1>Notes</h1>
-                <button>toggle mode</button>
-            </div>
+       
+          
             <div className="notes-list">
 
                 {notes.map((note) => {
@@ -17,7 +14,7 @@ const NoteList = ({ notes, handleAddNote, handleDeleteNote }) => {
 
             </div>
 
-        </>
+        
     )
 }
 export default NoteList;
