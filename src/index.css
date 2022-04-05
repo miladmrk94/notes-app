@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif !important;
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
 }
 
 .container {
@@ -19,7 +21,6 @@ body {
 }
 .note {
     background-color: #fef68a;
-
     border-radius: 10px;
     padding: 1rem;
     min-height: 170px;
